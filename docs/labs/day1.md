@@ -1,51 +1,52 @@
 ---
 layout: default
-title: Lab 1: Introduction to Basic SQL Queries
+title: Day 1 - SELECT Basics
 ---
 
-# Lab 1: Introduction to Basic SQL Queries
+# Day 1 Lab – SELECT Basics
 
-## Objectives
-- Learn how to write basic `SELECT` statements
-- Understand the `FROM` and `WHERE` clauses
-- Practice querying the `products` and `customers` tables
+Today’s lab focuses on learning how to extract data from a single, denormalized table: `orders_flat`.
 
-## Setup Instructions
-1. Download the starter database file `starter.db` from the `db/` folder.
-2. Open DBeaver or SQLite CLI.
-3. Connect to `starter.db`.
+## Learning Objectives
 
-## Exercises
+- Use `SELECT` to retrieve specific columns
+- Filter with `WHERE`
+- Sort using `ORDER BY`
+- Group with `GROUP BY`
+- Eliminate duplicates with `DISTINCT`
 
-### Exercise 1: Select All Records
-Write a query to display all columns from the `products` table.
+## Table: `orders_flat`
 
-```sql
-SELECT * FROM products;
-```
+| order_id | customer_name | product_name | quantity | order_date |
+|----------|----------------|--------------|----------|------------|
+| 1        | Alice          | Widget A     | 2        | 2023-08-01 |
+| 2        | Bob            | Widget B     | 1        | 2023-08-01 |
+| 3        | Alice          | Widget C     | 3        | 2023-08-02 |
+| ...      | ...            | ...          | ...      | ...        |
 
-### Exercise 2: Select Specific Columns
-Retrieve only the `product_id`, `name`, and `price` columns from the `products` table.
+This single table combines customer, product, and order info — so no JOINs are needed.
 
-```sql
-SELECT product_id, name, price FROM products;
-```
-
-### Exercise 3: Filtering Rows
-Write a query to find all customers from the city `'Seattle'`.
+## Example Queries
 
 ```sql
-SELECT * FROM customers WHERE city = 'Seattle';
+-- Get all records
+SELECT * FROM orders_flat;
+
+-- Find all orders by Alice
+SELECT * FROM orders_flat WHERE customer_name = 'Alice';
 ```
 
-### Exercise 4: Filtering with Numeric Conditions
-List all products with a price greater than 20.
+## Practice Tasks
 
-```sql
-SELECT * FROM products WHERE price > 20;
-```
+1. View the entire table.
+2. List only the customer names.
+3. Show each product ordered and its quantity.
+4. Get all orders placed on August 2nd, 2023.
+5. List all unique product names.
+6. Show all orders where the quantity was more than 2.
+7. Sort the orders by most recent first.
+8. Count how many orders each customer placed.
 
-## Reflection Questions
-- What does the `SELECT` clause do?
-- How does the `WHERE` clause filter records?
-- Why is it important to specify only the columns you need?
+## SQL File
+
+You can download the lab starter code here: [lab1_select.sql](lab1_select.sql)
