@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title | default: "Course Site" }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="/docs/index.html" {% if page.url == "/docs/index.html" %}class="active"{% endif %}>Home</a></li>
+        <li><a href="/docs/syllabus.html" {% if page.url == "/docs/syllabus.html" %}class="active"{% endif %}>Syllabus</a></li>
+        <li><a href="/docs/schedule.html" {% if page.url == "/docs/schedule.html" %}class="active"{% endif %}>Schedule</a></li>
+        <li><a href="/docs/labs/index.html" {% if page.url contains "/docs/labs/" %}class="active"{% endif %}>Labs</a></li>
+        <li><a href="/docs/project.html" {% if page.url == "/docs/project.html" %}class="active"{% endif %}>Final Project</a></li>
+        <li><a href="/docs/resources.html" {% if page.url == "/docs/resources.html" %}class="active"{% endif %}>Resources</a></li>
+        <li><a href="/docs/faq.html" {% if page.url == "/docs/faq.html" %}class="active"{% endif %}>FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© 2025 Your Course Name</p>
+  </footer>
+</body>
+</html>

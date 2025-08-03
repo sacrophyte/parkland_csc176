@@ -1,3 +1,8 @@
+---
+layout: default
+title: FAQ
+---
+
 # FAQ
 
 **Q: What if I miss a lab?**  

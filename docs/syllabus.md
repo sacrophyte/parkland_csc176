@@ -1,3 +1,8 @@
+---
+layout: default
+title: syllabus
+---
+
 # Syllabus
 
 ## Course Description

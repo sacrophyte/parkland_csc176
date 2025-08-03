@@ -1,3 +1,8 @@
+---
+layout: default
+title: resources
+---
+
 # Resources
 
 - [SQLite Docs](https://sqlite.org/docs.html)

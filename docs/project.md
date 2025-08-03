@@ -1,3 +1,8 @@
+---
+layout: default
+title: project
+---
+
 # Final Project
 
 ## Overview
