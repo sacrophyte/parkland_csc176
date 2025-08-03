@@ -1,0 +1,21 @@
+order_id,customer_name,customer_email,product,quantity,unit_price,order_date
+1001,Alex Kim,alex.kim@example.com,USB Cable,2,5.99,2025-07-21
+1002,Brenda Wu,brenda.wu@example.com,Wireless Mouse,1,19.95,2025-07-21
+1003,Alex Kim,alex.kim@example.com,USB Cable,1,5.99,2025-07-22
+1004,Carlos Diaz,carlos.diaz@example.com,HDMI Cable,3,8.5,2025-07-22
+1005,Brenda Wu,brenda.wu@example.com,Keyboard,1,49.99,2025-07-23
+1006,Diana Lee,diana.lee@example.com,Laptop Stand,1,29.99,2025-07-23
+1007,Alex Kim,alex.kim@example.com,Wireless Mouse,2,19.95,2025-07-24
+1008,Carlos Diaz,carlos.diaz@example.com,USB Cable,5,5.99,2025-07-24
+1009,Diana Lee,diana.lee@example.com,USB Cable,1,5.99,2025-07-25
+1010,Evan Smith,evan.smith@example.com,HDMI Cable,2,8.5,2025-07-25
+1011,Brenda Wu,brenda.wu@example.com,Laptop Stand,1,29.99,2025-07-26
+1012,Evan Smith,evan.smith@example.com,Keyboard,1,49.99,2025-07-26
+1013,Alex Kim,alex.kim@example.com,Keyboard,2,49.99,2025-07-27
+1014,Diana Lee,diana.lee@example.com,Wireless Mouse,1,19.95,2025-07-27
+1015,Carlos Diaz,carlos.diaz@example.com,Laptop Stand,1,29.99,2025-07-28
+1016,Alex Kim,alex.kim@example.com,HDMI Cable,1,8.5,2025-07-28
+1017,Brenda Wu,brenda.wu@example.com,USB Cable,3,5.99,2025-07-29
+1018,Evan Smith,evan.smith@example.com,Wireless Mouse,1,19.95,2025-07-29
+1019,Diana Lee,diana.lee@example.com,HDMI Cable,2,8.5,2025-07-30
+1020,Carlos Diaz,carlos.diaz@example.com,Keyboard,1,49.99,2025-07-30
