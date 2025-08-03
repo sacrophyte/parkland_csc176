@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title | default: "Course Site" }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        {% assign current_url = page.url | remove: site.baseurl %}
+        <li><a href="{{ site.baseurl }}/docs/index.html" {% if current_url == "/docs/index.html" %}class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ site.baseurl }}/docs/syllabus.html" {% if current_url == "/docs/syllabus.html" %}class="active"{% endif %}>Syllabus</a></li>
+        <li><a href="{{ site.baseurl }}/docs/schedule.html" {% if current_url == "/docs/schedule.html" %}class="active"{% endif %}>Schedule</a></li>
+        <li><a href="{{ site.baseurl }}/docs/labs/index.html" {% if current_url contains "/docs/labs/" %}class="active"{% endif %}>Labs</a></li>
+        <li><a href="{{ site.baseurl }}/docs/project.html" {% if current_url == "/docs/project.html" %}class="active"{% endif %}>Final Project</a></li>
+        <li><a href="{{ site.baseurl }}/docs/resources.html" {% if current_url == "/docs/resources.html" %}class="active"{% endif %}>Resources</a></li>
+        <li><a href="{{ site.baseurl }}/docs/faq.html" {% if current_url == "/docs/faq.html" %}class="active"{% endif %}>FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p style="color:red; font-weight:bold;">HELLO FROM LAYOUT</p>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© 2025 Your Course Name</p>
+  </footer>
+</body>
+</html>
